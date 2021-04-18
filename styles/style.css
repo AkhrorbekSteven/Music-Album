@@ -17,6 +17,9 @@ a {
 body {
     background-color: #F2F2F2;
 }
+button:hover {
+    cursor: pointer;
+}
 
 .container {
     width: 1300px;
@@ -214,7 +217,14 @@ button[type="submit"]:focus {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+.search-results {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
 .album-list {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -227,6 +237,9 @@ button[type="submit"]:focus {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .audio-wrapper {
     padding: 10px;
@@ -262,54 +275,25 @@ button[type="submit"]:focus {
 .audio-wrapper audio {
     width: 100%;
 }
+.audio-wrapper img {
+    width: 70px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 0 10px 2px rgba(230, 225, 225, 0.644);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
 .audio-wrapper audio:focus {
     outline: none;
 }
-.album-item:nth-child(1) {
-    background: url('../img/background-music1.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(2) {
-    background: url('../img/background-music2.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(3) {
-    background: url('../img/background-music3.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(4) {
-    background: url('../img/background-music4.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(5) {
-    background: url('../img/background-music5.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(6) {
-    background: url('../img/background-music6.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(7) {
-    background: url('../img/background-music7.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(8) {
-    background: url('../img/background-music8.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(9) {
-    background: url('../img/background-music9.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(10) {
-    background: url('../img/background-music10.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(11) {
-    background: url('../img/background-music11.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(12) {
-    background: url('../img/background-music12.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(13) {
-    background: url('../img/background-music13.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(14) {
-    background: url('../img/background-music14.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(15) {
-    background: url('../img/background-music15.jpg') center/cover no-repeat;
-}
-.album-item:nth-child(16) {
-    background: url('../img/background-music16.jpg') center/cover no-repeat;
+.next {
+    border: none;
+    border: 1px solid #f50;
+    background-color: #f50;
+    color: #fff;
+    padding: 5px 7px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-family: 'Signika', sans-serif;
+    transition: all 0.3s ease;
 }
